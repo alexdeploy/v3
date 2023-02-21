@@ -12,12 +12,12 @@
 					Hi all, I am
 				</span>
 				<h1>{{ config.dev.name }}</h1>
-				<h2>> {{ config.dev.role }}</h2>
+        <span class="diple flex">
+          >&nbsp;
+				<h2 class="line-1 anim-typewriter max-w-fit"> {{ config.dev.role }} </h2>
+        </span>
 			</div>
       <div>
-<!--         <button v-if="isMobile" class="bg-slate-400 p-2 rounded-md" onclick="showGame()">
-          Play game
-        </button> -->
       </div>
 			<div id="info">
 				<span class="action">
@@ -46,7 +46,7 @@
 			</div>
 		</section>
 
-		<section data-aos="fade-in" class="game" v-if="!isMobile">
+		<section data-aos="fade-up" class="game" v-if="!isMobile">
 			<SnakeGame />
 		</section>
 <!-- 
@@ -65,42 +65,37 @@
   width: 100%;
   flex: 1 1 auto;
   padding-left: 275px;
-  /* padding-top: 5rem; */ /* 80px */
 }
+
 .hero {
 	width: 100%;
 	justify-content: center;
-	
 }
+
 .game {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
 	justify-content: center;
-/* 	align-items: center; */
 	z-index: 20;
 }
 
 .mobile-game {
 	display: none;
-  position: relative;
+    position: relative;
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
 	justify-content: center;
-/* 	align-items: center; */
 	z-index: 30;
 }
 
 #hello .hero {
 	display: flex;
 	flex-direction: column;
-	/* display: grid;
-	grid-template-columns: repeat(12, minmax(0, 1fr)); */
 	margin: 0rem;
 }
-
 
 #hello .head span {
   font-size: 18px;
@@ -118,7 +113,7 @@
   padding-bottom: 1rem; /* 16px */
 }
 
-#hello .head h2 {
+#hello .head h2, #hello .head .diple {
   font-size: 32px;
   line-height: 1;
   color: #4D5BCE;
@@ -135,16 +130,16 @@
 }
 
 #info > span {
-  font-size: 14px;
-  line-height: 1;
-  color: #607B96;
-  font-family: 'Fira Code Retina';
-  padding-bottom: 1rem; /* 16px */
+    font-size: 14px;
+    line-height: 1;
+    color: #607B96;
+    font-family: 'Fira Code Retina';
+    padding-bottom: 1rem; /* 16px */
 }
 
 .code {
-  font-family: 'Fira Code Medium';
-  color: #E5E9F0;
+    font-family: 'Fira Code Medium';
+    color: #E5E9F0;
 }
 
 .code .identifier {
@@ -167,6 +162,7 @@
 
 #info {
 	padding-block: 2.5rem;
+    font-size: 14px;
 }
 
 #info .action {
@@ -177,18 +173,45 @@
   display: none;
 }
 
+/* Typewrite Animation */
+
+.line-1 {
+    width: fit-content;
+    border-right: 3px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 2px;
+}
+
+.anim-typewriter{
+    animation: typewriter 3.5s steps(40) 1s 1 normal both,
+    blinkTextCursor 800ms steps(40) infinite normal;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* Background blur */
+
 .css-blurry-gradient-blue {
-  position: fixed;
-  bottom: 25%;
-  right: 5%;
-  width: 300px;
-  height: 300px;
+    position: fixed;
+    bottom: 25%;
+    right: 5%;
+    width: 300px;
+    height: 300px;
 	border-radius: 0% 0% 50% 50%;
-  rotate: 10deg;
+    rotate: 10deg;
 	filter: blur(70px);
-  background: radial-gradient(circle at 50% 50%,rgba(77, 91, 206, 1), rgba(76, 0, 255, 0));
-  opacity: 0.5;
-  z-index: 10;
+    background: radial-gradient(circle at 50% 50%,rgba(77, 91, 206, 1), rgba(76, 0, 255, 0));
+    opacity: 0.5;
+    z-index: 10;
 }
 
 .css-blurry-gradient-green {
@@ -204,12 +227,7 @@
   z-index: 10;
 }
 
-#info {
-  font-size: 14px;
-}
-
-
-/* mobile */
+/* Mobile */
 @media (max-width: 768px) {
 
 	#hello {
@@ -226,7 +244,7 @@
 		padding-top: 4rem; /* 40px */
 	}
 
-	#hello .head h2 {
+	#hello .head h2, #hello .head .diple {
 		font-size: 20px;
 		color: #43D9AD;
 	}
@@ -234,65 +252,71 @@
 	#info .action {
 		display: none;
 	}
-
 }
 
-/* tablet */
+/* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
+
 	#hello {
 		padding-left: 0;
 	}
+
 	#hello .hero {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		margin: 1.75rem; /* 28px */
 	}
+
 	.head {
 		padding-top: 4rem; /* 40px */
 	}
-
 }
 
 @media (min-width: 1024px) and (max-width: 1320px) {
+
 	#hello {
 		padding-left: 135px;
 	}
 }
 
 
-/* LG */
+/* Desktop */
 
 @media (min-width: 1024px) {
 
-  .css-blurry-gradient-blue {
-    position: fixed;
-    bottom: 10%;
-    right: 10%;
-    width: 500px;
-    height: 500px;
-    opacity: 0.7;
-    border-radius: 100% 50% 100% 0%;
-  }
+    .css-blurry-gradient-blue {
+        position: fixed;
+        bottom: 10%;
+        right: 10%;
+        width: 500px;
+        height: 500px;
+        opacity: 0.7;
+        border-radius: 100% 50% 100% 0%;
+    }
 
-  .css-blurry-gradient-green {
-    position: fixed;
-    top: 10%;
-    right: 35%;
-    filter: blur(100px);
-    rotate: 10deg;
-    width: 400px;
-    height: 400px;
-    opacity: 0.5;
-    border-radius: 100% 0% 0% 0%;
-    rotate: 20deg;
-  }
+    .css-blurry-gradient-green {
+        position: fixed;
+        top: 10%;
+        right: 35%;
+        filter: blur(100px);
+        rotate: 10deg;
+        width: 400px;
+        height: 400px;
+        opacity: 0.5;
+        border-radius: 100% 0% 0% 0%;
+        rotate: 20deg;
+    }
 }
 
+/* Desktop 2K */
+
 @media (min-width: 1920px){
+
 	#hello {
 		padding-left: 310px;
 	}
+
 	#hello .head h1 {
 		font-size: 62px;
 	}
@@ -302,51 +326,50 @@
 
 <script>
 export default {
-  name: 'Hello',
-  setup() {
-    const config = useRuntimeConfig()
-    return {
-      config
-    }
-  },
-  data() {
-    return {
-      isMobile: false,
-      loading: true
-    }
-  },
-  mounted() {
-    // Detectamos si es mobile
-    if (window.innerWidth <= 1024) {
-      this.isMobile = true
-    }
-
-    // Escuchamos los cambios de tamaño de pantalla
-    window.addEventListener('resize', this.handleResize)
-
-    // When the component is mounted, we can remove the loader.
-    this.loading = false
-  },
-  beforeDestroy() {
-    // Remove the event listener when the component is destroyed.
-    window.removeEventListener('resize', this.handleResize)
-  },
-  methods: {
-    handleResize() {
-      if (window.innerWidth <= 1024) {
-        this.isMobile = true
-      } else {
-        this.isMobile = false
-      }
+    name: 'Hello',
+    setup() {
+        const config = useRuntimeConfig()
+        return {
+            config
+        }
     },
-    showGame(){
-      const snake = document.getElementById('mobile-game')
-      const hero = document.getElementById('hero')
-      hero.style.display = 'block' ? hero.style.display = 'none' : hero.style.display = 'block'
-      console.log(snake)
-      snake.style.display = 'none' ? snake.style.display = 'block' : snake.style.display = 'none'
+    data() {
+        return {
+            isMobile: false,
+            loading: true
+        }
+    },
+    mounted() {
+        // Detectamos si es mobile
+        if (window.innerWidth <= 1024) {
+            this.isMobile = true
+        }
+
+        // Listen resize window event
+        window.addEventListener('resize', this.handleResize)
+
+        // When the component is mounted, remove the loader.
+        this.loading = false
+    },
+    beforeDestroy() {
+        // Remove the event listener when the component is destroyed.
+        window.removeEventListener('resize', this.handleResize)
+    },
+    methods: {
+        handleResize() {
+            if (window.innerWidth <= 1024) {
+                this.isMobile = true
+            } else {
+                this.isMobile = false
+            }
+        },
+        showGame(){
+            const snake = document.getElementById('mobile-game')
+            const hero = document.getElementById('hero')
+            hero.style.display = 'block' ? hero.style.display = 'none' : hero.style.display = 'block'
+            snake.style.display = 'none' ? snake.style.display = 'block' : snake.style.display = 'none'
+        }
     }
-  }
 }
 </script>
 
