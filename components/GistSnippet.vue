@@ -1,5 +1,5 @@
 <template>
-    <div class="gist mb-5" v-if="dataFetched">
+    <div data-aos="fade-down" class="gist mb-5" v-if="dataFetched">
         
         <!-- head info -->
         <div class="flex justify-between my-2">

@@ -5,12 +5,12 @@
       <h2>_about-me</h2>
     </div>
 
-    <div id="page-menu" class="w-full flex">
+    <div data-aos="fade-right" id="page-menu" class="w-full flex">
 
       <!-- DESKTOP section icons -->
       <div id="sections">
-        <div id="section-icon" v-for="section in config.dev.about.sections" :key="section.title" :class="{ active: isSectionActive(section.title)}">
-          <img :id="'section-icon-' + section.title" :src="section.icon" :alt="section.title + '-section'" @click="focusCurrentSection(section)">
+        <div id="section-icon" v-for="section in config.dev.about.sections" :key="section.title" :class="{ active: isSectionActive(section.title)}" @click="focusCurrentSection(section)">
+          <img :id="'section-icon-' + section.title" :src="section.icon" :alt="section.title + '-section'" >
         </div>
       </div>
 
@@ -113,7 +113,7 @@
         <div class="tab-height w-full hidden lg:flex border-bot items-center">
           <div class="flex items-center border-right h-full">
             <p v-html="config.dev.about.sections[currentSection].title" class="font-fira_regular text-menu-text text-sm px-3"></p>
-            <img src="/icons/close.svg" alt="" class="mx-3">
+            <img id="close" src="/icons/close.svg" alt="" class="mx-3">
           </div>
         </div>
 
@@ -194,7 +194,8 @@
 }
 
 #section-icon {
-  @apply my-6 hover:cursor-pointer flex justify-center;
+  @apply hover:cursor-pointer flex justify-center;
+  padding-block: 1rem;
   opacity: 0.4;
 }
 
@@ -204,6 +205,7 @@
 
 #section-icon:hover {
   opacity: 1;
+  background-color: #1e2d3d74;
 }
 
 .tab-height {
@@ -246,6 +248,11 @@
 #gists-content {
   height: 100%;
   overflow: hidden;
+}
+
+#close:hover {
+  cursor: pointer;
+  background-color: #1e2d3d74;
 }
 
 @media (max-width: 1024px) {
