@@ -5,7 +5,7 @@
     	<div class="css-blurry-gradient-blue"></div>
     	<div class="css-blurry-gradient-green"></div>
 
-		<section id="hero" class="hero">
+		<section data-aos="fade-in" id="hero" class="hero">
 		
 			<div class="head">
 				<span>
@@ -46,7 +46,7 @@
 			</div>
 		</section>
 
-		<section class="game" v-if="!isMobile">
+		<section data-aos="fade-in" class="game" v-if="!isMobile">
 			<SnakeGame />
 		</section>
 <!-- 

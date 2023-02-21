@@ -1,5 +1,5 @@
 <template>
-    <main id="contact-me" class="page">
+    <main data-aos="fade-in" id="contact-me" class="page">
 
         <div id="mobile-page-title">
             <h2>_contact-me</h2>

@@ -1,5 +1,5 @@
 <template>
-  <main v-if="!loading" class="flex flex-col flex-auto lg:flex-row overflow-hidden">
+  <main data-aos="fade-in" v-if="!loading" class="flex flex-col flex-auto lg:flex-row overflow-hidden">
 
     <div id="mobile-page-title">
       <h2>_projects</h2>

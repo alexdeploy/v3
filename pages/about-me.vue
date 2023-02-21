@@ -1,5 +1,5 @@
 <template>
-  <main v-if="!loading" id="about-me" class="page">
+  <main data-aos="fade-in" v-if="!loading" id="about-me" class="page">
 
     <div id="mobile-page-title">
       <h2>_about-me</h2>

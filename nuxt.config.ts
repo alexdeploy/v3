@@ -1,7 +1,6 @@
 const config = require('./developer.json')
 const siteTitle = `${config.name} | ${config.role}`
 
-
 /*
  * Nuxt 3 Config File
  Usage: https://nuxt.com/docs/api/configuration/nuxt-config
@@ -34,7 +33,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'manifest', href: 'pwa/manifest.json' },
-        { rel: 'apple-touch-icon', href: 'pwa/icons/apple-touch-icon.png' },
+        { rel: 'apple-touch-icon', href: 'pwa/icons/apple-touch-icon.png' }
       ],
     },
   },
