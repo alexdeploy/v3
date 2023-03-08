@@ -28,11 +28,11 @@
                 "info": { 
                     "bio": {
                         "title": "bio",
-                        "description": "<br> About me <br> I have 5 years of experience in web development lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum."
+                        "description": "<br>Hi <i>@everyone</i>! 👋<br><br>My name is Álex Rueda and i'm <b>full stack developer</b>. Some years ago i decided to refuse Hogwarts Acceptance Letter to learn another type of magic.<br><br> I'm currently working as freelancer building software solutions, like <b>movile apps</b> or <b>awesome web features</b>.<br><br>Maybe you have heard about <b>MEVN Stack</b>. The most of my software is built with <b>JavaScript</b> and <b>Vue</b>, using <b>Express</b> and <b>MongoDB</b> as backend, but i also have worked with <b>Wordpress</b> and <b>PHP</b>."
                     },
                     "interests": {
                         "title": "interests",
-                        "description": "<br>I am constantly learning and adapting to new technologies. My creativity and attention to detail make me an asset in designing elegant and user-friendly interfaces. <br><br> In my free time, I enjoy building personal projects and participating in hackathons to challenge myself and improve my skills. I am always looking for new opportunities to grow and contribute to meaningful projects."
+                        "description": "<br>I am constantly learning and adapting to new technologies. My creativity and attention to detail make me an asset in designing elegant and user-friendly interfaces. <br><br> In my free time, I enjoy building personal projects to challenge myself and improve my skills, and i'm always looking for new opportunities to grow and contribute to meaningful projects."
                     },
                     "education": {
                         "title": "education",

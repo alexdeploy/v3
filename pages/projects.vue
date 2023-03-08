@@ -11,7 +11,7 @@
       <p class="font-fira_regular text-white text-sm">projects</p>
     </div>
     
-    <div id="filter-menu" class="w-full flex-col border-right font-fira_regular text-menu-text hidden lg:flex">
+    <div data-aos="fade-right" id="filter-menu" class="w-full flex-col border-right font-fira_regular text-menu-text hidden lg:flex">
       <!-- title -->
       <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
         <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3 open">
@@ -63,7 +63,7 @@
           </span>
         </div>
 
-        <div id="project" v-for="(project, key, index) in projects" :key="key" class="lg:mx-5">
+        <div data-aos="fade-down" id="project" v-for="(project, key, index) in projects" :key="key" class="lg:mx-5">
           <!-- title -->
           <span class="flex text-sm my-3">
             <h3 v-if="index == null" class="text-purplefy font-fira_bold mr-3">Project {{ key + 1 }}</h3>

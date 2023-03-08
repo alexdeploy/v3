@@ -275,6 +275,16 @@
   padding: 0px 25px;
 }
 
+#commented-text b {
+  font-family: 'Fira Code SemiBold';
+  color: #43D9AD;
+}
+
+#commented-text i {
+  font-family: 'Fira Code SemiBold';
+  color: #4D5BCE;
+}
+
 </style>
 
 <script>
