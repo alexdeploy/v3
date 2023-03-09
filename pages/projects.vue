@@ -81,8 +81,7 @@
             </div>
 
             <div class="pb-8 pt-6 px-6 border-top">
-              <p class="text-menu-text font-fira_retina text-sm mb-5">
-                {{ project.description }}
+              <p v-html="project.description" class="text-menu-text font-fira_retina text-sm mb-5">
               </p>
               <a id="view-button" :href="project.url" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
                   view-project
@@ -149,7 +148,7 @@
 }
 
 #window {
-  max-height: 120px;
+  max-height: 150px;
   position: relative;
   overflow: hidden;
 }
@@ -254,7 +253,7 @@ export default {
   },
   data() {
     return {
-      techs: ['React', 'HTML', 'CSS', 'Vue', 'Angular', 'Gatsby', 'Flutter'],
+      techs: ['React', 'HTML', 'CSS', 'Tailwind','JavaScript', 'Vue', 'Angular', 'Gatsby', 'Flutter'],
       filters: ['all'],
       projects: '',
       loading: true,

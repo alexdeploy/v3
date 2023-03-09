@@ -107,11 +107,18 @@
     },
     "projects": {
         "1": {
-            "title": "_ui-animations",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ui-animations2.png",
-            "tech": ["Flutter"],
-            "url": "https://github.com/"
+            "title": "_nuxt-pwa-template",
+            "description": "Modern <b>PWA template</b> built with Nuxt 3.0 and Tailwind, installable in any device and with easy configuration.",
+            "img": "/images/projects/nuxt-pwa-small.png",
+            "tech": ["Vue", "Tailwind"],
+            "url": "https://github.com/alexdeploy/nuxt-pwa-template"
+        },
+        "2": {
+            "title": "_jukebox-discord",
+            "description": "Advanced <b>music bot for Discord</b>, that allows you to play and controll music in any voice channel using an integrated interface.",
+            "img": "/images/projects/jukebox-discord-small.png",
+            "tech": ["JavaScript"],
+            "url": "https://github.com/alexdeploy/jukebox-discord"
         }
     }
 }
