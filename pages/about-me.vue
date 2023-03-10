@@ -25,7 +25,7 @@
 
         <!-- folders -->
         <div>
-          <div v-for="(folder, key, index) in config.dev.about.sections[currentSection].info" :key="key" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text" @click="focusCurrentFolder(folder)">
+          <div id="folder" v-for="(folder, key, index) in config.dev.about.sections[currentSection].info" :key="key" class="grid grid-cols-2 items-center py-1 font-fira_regular text-menu-text" @click="focusCurrentFolder(folder)">
             <div class="flex col-span-2 hover:text-white hover:cursor-pointer">
               <img id="diple" src="/icons/diple.svg" alt="" :class="{ open: isOpen(folder.title)}">
               <img :src="'/icons/folder' + (index+1) + '.svg'" alt="" class="mr-3">
@@ -226,6 +226,11 @@
   width: 14px;
   height: 7px;
   background-color: #607B96;
+}
+
+#folder:hover {
+  cursor: pointer;
+  background-color: #1e2d3d74;
 }
 
 #diple {

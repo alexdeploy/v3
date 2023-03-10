@@ -10,7 +10,7 @@
                 "info": {
                     "experience": {
                         "title": "experience",
-                        "description": "<br>Over the past 5 years, I have gained valuable experience as a front-end developer. I have worked on a wide range of projects, from small websites to large-scale applications. My expertise in HTML, CSS, JavaScript, and React.js has allowed me to create visually appealing and user-friendly websites. I have also developed an understanding of best practices for accessibility and have implemented these principles in my work.<br><br>In addition, I have gained experience working with various back-end technologies and integrating front-end features with RESTful APIs. I have also worked in Agile development environments and have become familiar with project management tools such as Jira. These experiences have honed my skills and have given me the confidence to tackle any front-end development project."
+                        "description": "I have dedicated my last years of study to creating my own projects to improve my skills and testing different technologies.<br><br> Additionally, I have collaborated on some <b>open source projects</b> on Github and created some corporate web pages autonomously. I still don't have experience working for companies as a programmer. But it's only a matter of time :)"
                     },
                     "hard-skills": {
                         "title": "hard-skills",
@@ -50,11 +50,11 @@
                 "info": {
                     "sports": {
                         "title": "sports",
-                        "description": "<br>I am an avid sports enthusiast and have participated in a range of team and individual sports, including soccer, basketball, and tennis. I enjoy the challenges that come with each sport and the sense of accomplishment that comes with improving my skills.<br><br> I believe that sports provide a great way to stay active, build relationships, and develop a competitive spirit. I am always looking for new opportunities to get involved in sports and continue to challenge myself both physically and mentally. Whether it's playing in a pick-up game with friends or participating in a competitive league, I believe that sports are a crucial part of a healthy and balanced lifestyle."
+                        "description": "<br>"
                     },
                     "favorite-games": {
                         "title": "favorite-games",
-                        "description": "<br>I am a passionate gamer with a love for strategy-based games such as League of Legends and Final Fantasy. These games offer a unique mix of strategy, teamwork, and individual skill, which I find extremely engaging.<br><br> I enjoy learning and mastering new champions and strategies in League of Legends, and I find the rich worlds and characters in Final Fantasy to be incredibly immersive. In my free time, I enjoy playing and competing with friends, and I am always looking for new challenges and ways to improve my gameplay. I believe that video games offer a fantastic way to unwind, connect with others, and develop problem-solving and strategic thinking skills."
+                        "description": "<br>Videogames are one of my favorite hobbies, especially strategy-based games such as <b>League of Legends</b> or my childhood-favourite, <b>Final Fantasy</b> saga.<br><br>These games offer a unique mix of strategy, teamwork, and individual skill, which I find <b>extremely engaging</b>.I enjoy learning and mastering new champions and strategies in League of Legends, and I find the rich worlds and characters in Final Fantasy to be incredibly immersive.<br><br>In my free time, I enjoy playing and competing with friends, and I am always looking for new challenges and ways to improve my gameplay. I believe that video games offer a fantastic way to unwind, connect with others, and <b>develop problem-solving</b> and <b>strategic thinking skills.</b><br><br><i>GG!</i>"
                     }
                 }
             }
@@ -74,10 +74,10 @@
                 "url": "https://github.com/",
                 "user": "alexdeploy"
             },
-            "facebook": {
-                "title": "Facebook profile",
-                "url": "https://facebook.com/",
-                "user": "username"
+            "instagram": {
+                "title": "Instagram account",
+                "url": "https://instagram.com/",
+                "user": "alexdeploy"
             },
             "twitter": {
                 "title": "Twitter account",
@@ -93,10 +93,15 @@
                     "url": "https://instagram.com/",
                     "user": "alexdeploy"
                 },
-                "twitch": {
-                    "title": "Twitch profile",
-                    "url": "https://twitch.com/",
-                    "user": "username"
+                "linkedin": {
+                    "title": "LinkedIn profile",
+                    "url": "https://linkedin.com/in/",
+                    "user": "alexdeploy"
+                },
+                "medium": {
+                    "title": "My Newsletter",
+                    "url": "https://medium.com/@",
+                    "user": "alexdeploy"
                 }
             }
         }
