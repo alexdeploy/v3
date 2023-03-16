@@ -65,6 +65,7 @@
   width: 100%;
   flex: 1 1 auto;
   padding-left: 275px;
+  overflow: hidden;
 }
 
 .hero {
