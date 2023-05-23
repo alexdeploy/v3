@@ -112,13 +112,27 @@
     },
     "projects": {
         "1": {
+            "title": "_discord-gpt",
+            "description": "DiscordGPT is a <b>empowered bot for Discord</b> servers with AI! Experience the ultimate chatbot <b>powered by OpenAI's GPT3.5</b> for seamless interactions.",
+            "img": "/images/projects/discord-gpt.png",
+            "tech": ["JavaScript"],
+            "url": "https://github.com/alexdeploy/discord-gpt"
+        },
+        "2": {
+            "title": "_developer-portfolio-v2",
+            "description": "The first open source version of Portfolio for Developers Concept V.2, <b>designed by @darelova and developed by @me</b>.",
+            "img": "/images/projects/developer-portfolio-v2.png",
+            "tech": ["Vue","Tailwind","JavaScript"],
+            "url": "https://github.com/alexdeploy/developer-portfolio-v2"
+        },
+        "3": {
             "title": "_nuxt-pwa-template",
             "description": "Modern <b>PWA template</b> built with Nuxt 3.0 and Tailwind, installable in any device and with easy configuration.",
             "img": "/images/projects/nuxt-pwa-small.png",
             "tech": ["Vue", "Tailwind"],
             "url": "https://github.com/alexdeploy/nuxt-pwa-template"
         },
-        "2": {
+        "4": {
             "title": "_jukebox-discord",
             "description": "Advanced <b>music bot for Discord</b>, that allows you to play and controll music in any voice channel using an integrated interface.",
             "img": "/images/projects/jukebox-discord-small.png",
